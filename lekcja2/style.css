@@ -1,0 +1,35 @@
+#naglowek{
+background-color: rgb(0, 48, 97);
+color: rgb(255, 255, 255);
+text-align: center;
+padding: 40px;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#baner{
+    text-align: center;
+    padding: 50px;
+    color: white;
+    background-image: url(https://yt3.googleusercontent.com/y5iu_3s2_epRGoo8iMuItCJD3aRlTJHuZpwtHzsQUuaOe8-USctSSDiI3ccYkDPbR7aXwc13Bw=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj);
+}
+
+.wpis{
+    width: 100%;
+    padding-left: 150px;
+}
+
+.wpis{
+    width: 80%;
+    border-radius: 16px;
+    box-shadow:0px 2px 2px 2px;
+}
+
+
+.wpis .autor{
+    font-size: large;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.komentarze{
+     text-align: center;
+}
