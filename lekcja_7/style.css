@@ -1,0 +1,86 @@
+body {
+	background-color: #cfe8ff;
+}
+
+#ambulance {
+	width: 500px;
+	height: 300px;
+	border: 1px solid black;
+	border-radius: 200px 5px 10px 20px;
+	text-align: center;
+	color: red;
+	font-size: 64px;
+	font-family: monospace;
+	background: linear-gradient(0deg, #ffffff 0%, #ff6767 9%, #ffffff 18%, #0d2aff 33%, #ffffff 70%, #fd2d2d 73%, #ffffff 84%, #ffffff 100%);;
+}
+
+.wheel {
+	width: 90px;
+	height: 90px;
+	background-color: #e8e8e8;
+	border: 10px solid black;
+	border-radius: 100px;
+	text-align: center;
+	animation: spin 1s linear infinite;
+
+}
+
+#wheel-front {
+	position: relative; 
+	bottom: 50px; 
+	left: 70px;
+}
+
+#wheel-back {
+	position: relative; 
+	bottom: 158px; 
+	left: 350px;
+}
+
+@keyframes spin {
+	/* TODO: opisz pełny obrót od 0 do 360 stopni */
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+
+#siren {
+	/* TODO: nadaj syrenie rozmiar, czarne tło i zaokrąglony górny brzeg */
+	position: relative;
+	left: 200px;
+	width: 100px;
+	height: 100px;
+	background-color: black;
+	border-radius: 50px 50px 5px 5px;
+	
+}
+
+#siren:hover {
+	animation: siren 1s infinite;
+	/* TODO: uruchom animację siren po najechaniu myszką */
+}
+
+@keyframes siren {
+	/* TODO: opisz zmianę koloru tła od czarnego, przez niebieski, do czerwonego */
+	0%   { background: black; }
+	50%  { background: blue; }
+	100% { background: red; }
+}
+}
+
+#emergency {
+	position: absolute;
+	right: 30%;
+	top: 200px;
+	padding: 20px;
+	background: red;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	border: 2px solid blue;
+	border-radius: 10px;
+	transition: transform 1s;
+}
+
+#emergency:hover {
+	transform: scale(1.5);
+}
